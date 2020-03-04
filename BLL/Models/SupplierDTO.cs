@@ -3,7 +3,7 @@ namespace BLL.Models
 {
     public class SupplierDTO
     {
-        public int Id {get; set;}
+        public int SupplierId {get; set;}
         public string Name {get; set;}
         public IEnumerable<ProductDTO> Products {get; set;}
     }

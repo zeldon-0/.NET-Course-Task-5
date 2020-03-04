@@ -24,12 +24,13 @@ namespace BLL.Services
 
         public void Delete(ProductDTO prod)
         {
-            _uow.Products.Delete(prod.Id);
+            _uow.Products.Delete(prod.ProductId);
             _uow.Save();
         }
         public void Update(ProductDTO prod)
         {
             _uow.Products.Update(BLLMapper.Map<Product>(prod));
+            _uow.Save();
         }
 
         public IEnumerable<ProductDTO> GetAll()
@@ -40,7 +41,7 @@ namespace BLL.Services
 
         public IEnumerable<ProductDTO> GetByCategory(CategoryDTO cat)
         {
-            var category=_uow.Categories.GetById(BLLMapper.Map<Category>(cat).Id);
+            var category=_uow.Categories.GetById(cat.CategoryId);
             return BLLMapper.Map<CategoryDTO>(category).Products;
         }
 
@@ -52,7 +53,7 @@ namespace BLL.Services
 
         public IEnumerable<ProductDTO> GetBySupplier(SupplierDTO sup)
         {
-            var supplier=_uow.Categories.GetById(BLLMapper.Map<Supplier>(sup).Id);
+            var supplier=_uow.Suppliers.GetById(sup.SupplierId);
             return BLLMapper.Map<SupplierDTO>(supplier).Products;
         }
 

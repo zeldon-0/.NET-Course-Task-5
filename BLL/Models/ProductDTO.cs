@@ -1,9 +1,10 @@
+using System.Collections.Generic;
 namespace BLL.Models
 {
     public class ProductDTO
     {
-        public int Id {get; set;}
+        public int ProductId {get; set;}
         public string Name {get; set;}
-        public int CategoryID {get; set;}
+        public  CategoryDTO Category {get; set;}
     }
 }

@@ -1,4 +1,4 @@
-using System;
+using System.Linq;
 using AutoMapper;
 using DAL_EF.Entities;
 using BLL.Models;
@@ -12,19 +12,25 @@ namespace BLL.Mappers
         {
             configuration = new MapperConfiguration(cfg =>
             {
-               CreateTwoWayMap<Category, CategoryDTO>(cfg);
-               CreateTwoWayMap<Supplier, SupplierDTO>(cfg);
-               CreateTwoWayMap<Product, ProductDTO>(cfg);
+                
+                cfg.CreateMap<Supplier, SupplierDTO>()
+                    .ForMember(dest => dest.Products,
+                                opt => opt.MapFrom(src => src.ProductSuppliers
+                                .Select(ps => ps.Product)))
+                    .ReverseMap()
+                    .PreserveReferences()
+                    .ForMember(dest => dest.ProductSuppliers,
+                                opt => opt.MapFrom (src => src.Products
+                                .Select (p => new {p.ProductId, p, src.SupplierId, src })));
+                cfg.CreateMap<Product, ProductDTO>()
+                    .ReverseMap();
+                cfg.CreateMap<Category, CategoryDTO>()
+                    .ReverseMap();
+
 
             });
             mapper=configuration.CreateMapper();
         }
-        private static void CreateTwoWayMap<T1, T2>(IMapperConfigurationExpression cfg)
-        {
-            cfg.CreateMap<T1,T2>();
-            cfg.CreateMap<T2,T1>();
-        }
-
         public static T Map<T> (object src)
         {
             return mapper.Map<T>(src);

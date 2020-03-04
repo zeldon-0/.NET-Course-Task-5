@@ -5,12 +5,14 @@ namespace BLL.Interfaces
 {
     public interface ICategoryService : IDisposable
     {
-        void Create(CategoryDTO prod);
-        void Delete(CategoryDTO prod);
-        void Update(CategoryDTO prod);
+        void Create(CategoryDTO cat);
+        void Delete(CategoryDTO cat);
+        void Update(CategoryDTO cat);
 
         CategoryDTO GetById(int id);
         IEnumerable<CategoryDTO> GetAll();
+        CategoryDTO GetProductCategory (ProductDTO prod);
+        IEnumerable<CategoryDTO> GetSupplierCategories(SupplierDTO sup);
 
     }
 }

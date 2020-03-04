@@ -18,11 +18,11 @@ namespace DAL_EF.EF
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Product>()
-                        .HasKey(t => t.Id);
+                        .HasKey(t => t.ProductId);
             modelBuilder.Entity<Category>()
-                        .HasKey(c => c.Id);
+                        .HasKey(c => c.CategoryId);
             modelBuilder.Entity<Supplier>()
-                        .HasKey(s => s.Id);
+                        .HasKey(s => s.SupplierId);
 
             modelBuilder.Entity<Product>()
                         .HasOne<Category>(p => p.Category)
