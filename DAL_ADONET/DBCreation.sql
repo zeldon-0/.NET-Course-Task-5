@@ -1,0 +1,35 @@
+CREATE DATABASE Task5_1;
+USE Task5_1;
+
+
+CREATE TABLE Categories
+(
+	CategoryId INT PRIMARY KEY IDENTITY,
+	Name VARCHAR(30)
+);
+
+CREATE TABLE Products
+(
+	ProductId INT PRIMARY KEY IDENTITY,
+	Name VARCHAR(30),
+	Price INT,
+	CategoryId INT,
+	CONSTRAINT FK_1 FOREIGN KEY (CategoryId)
+	REFERENCES Categories(CategoryId)
+);
+CREATE TABLE Suppliers
+(
+	SupplierId INT PRIMARY KEY IDENTITY,
+	Name VARCHAR(30),
+);
+
+CREATE TABLE ProductSuppliers
+(
+	PSId INT PRIMARY KEY IDENTITY,
+	ProductId INT,
+	SupplierId INT,
+	CONSTRAINT FK_1 FOREIGN KEY (ProductId)
+	REFERENCES Products(ProductId),
+	CONSTRAINT FK_2 FOREIGN KEY (SupplierId)
+	REFERENCES Suppliers(SupplierId)
+);

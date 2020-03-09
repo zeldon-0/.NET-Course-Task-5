@@ -1,0 +1,8 @@
+C:\Misc\EPAM Training\Task_5\DAL_ADONET\bin\Debug\netstandard2.0\DAL_ADONET.deps.json
+C:\Misc\EPAM Training\Task_5\DAL_ADONET\bin\Debug\netstandard2.0\DAL_ADONET.dll
+C:\Misc\EPAM Training\Task_5\DAL_ADONET\bin\Debug\netstandard2.0\DAL_ADONET.pdb
+C:\Misc\EPAM Training\Task_5\DAL_ADONET\obj\Debug\netstandard2.0\DAL_ADONET.csprojAssemblyReference.cache
+C:\Misc\EPAM Training\Task_5\DAL_ADONET\obj\Debug\netstandard2.0\DAL_ADONET.AssemblyInfoInputs.cache
+C:\Misc\EPAM Training\Task_5\DAL_ADONET\obj\Debug\netstandard2.0\DAL_ADONET.AssemblyInfo.cs
+C:\Misc\EPAM Training\Task_5\DAL_ADONET\obj\Debug\netstandard2.0\DAL_ADONET.dll
+C:\Misc\EPAM Training\Task_5\DAL_ADONET\obj\Debug\netstandard2.0\DAL_ADONET.pdb

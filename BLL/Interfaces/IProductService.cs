@@ -13,5 +13,8 @@ namespace BLL.Interfaces
         IEnumerable<ProductDTO> GetAll();
         IEnumerable<ProductDTO> GetByCategory(CategoryDTO cat);
         IEnumerable<ProductDTO> GetBySupplier(SupplierDTO sup);
+
+        ProductDTO GetWithMaxPrice();
+        ProductDTO GetWithMinPrice();
     }
 }

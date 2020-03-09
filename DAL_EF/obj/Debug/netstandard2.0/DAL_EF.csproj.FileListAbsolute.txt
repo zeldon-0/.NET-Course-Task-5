@@ -2,9 +2,7 @@ C:\Misc\EPAM Training\Task_5\DAL_EF\bin\Debug\netstandard2.0\DAL_EF.deps.json
 C:\Misc\EPAM Training\Task_5\DAL_EF\bin\Debug\netstandard2.0\DAL_EF.dll
 C:\Misc\EPAM Training\Task_5\DAL_EF\bin\Debug\netstandard2.0\DAL_EF.pdb
 C:\Misc\EPAM Training\Task_5\DAL_EF\obj\Debug\netstandard2.0\DAL_EF.csprojAssemblyReference.cache
-C:\Misc\EPAM Training\Task_5\DAL_EF\obj\Debug\netstandard2.0\DAL_EF.csproj.CoreCompileInputs.cache
 C:\Misc\EPAM Training\Task_5\DAL_EF\obj\Debug\netstandard2.0\DAL_EF.AssemblyInfoInputs.cache
 C:\Misc\EPAM Training\Task_5\DAL_EF\obj\Debug\netstandard2.0\DAL_EF.AssemblyInfo.cs
 C:\Misc\EPAM Training\Task_5\DAL_EF\obj\Debug\netstandard2.0\DAL_EF.dll
 C:\Misc\EPAM Training\Task_5\DAL_EF\obj\Debug\netstandard2.0\DAL_EF.pdb
-C:\Misc\EPAM Training\Task_5\DAL_EF\bin\Debug\netstandard2.0\DAL_EF.dll.config

@@ -57,6 +57,29 @@ namespace BLL.Services
             return BLLMapper.Map<SupplierDTO>(supplier).Products;
         }
 
+        public ProductDTO GetWithMaxPrice()
+        {
+            var products = _uow.Products.GetAll();
+
+            int max = products.Max(p => p.Price);
+
+            return products.Where(p => p.Price == max)
+                .Select(product => BLLMapper.Map<ProductDTO>(product))
+                .FirstOrDefault();
+
+        }
+        public ProductDTO GetWithMinPrice()
+        {
+            var products = _uow.Products.GetAll();
+
+            int min = products.Min(p => p.Price);
+
+            return products.Where(p => p.Price == min)
+                .Select(product => BLLMapper.Map<ProductDTO>(product))
+                .FirstOrDefault();
+
+        }
+
         private bool disposed=false;
         public virtual void Dispose(bool disposing)
         {

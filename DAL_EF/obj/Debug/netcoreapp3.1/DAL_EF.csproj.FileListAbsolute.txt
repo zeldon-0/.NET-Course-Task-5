@@ -1,0 +1,10 @@
+C:\Misc\EPAM Training\Task_5\DAL_EF\bin\Debug\netcoreapp3.1\DAL_EF.deps.json
+C:\Misc\EPAM Training\Task_5\DAL_EF\bin\Debug\netcoreapp3.1\DAL_EF.dll
+C:\Misc\EPAM Training\Task_5\DAL_EF\bin\Debug\netcoreapp3.1\DAL_EF.pdb
+C:\Misc\EPAM Training\Task_5\DAL_EF\obj\Debug\netcoreapp3.1\DAL_EF.csprojAssemblyReference.cache
+C:\Misc\EPAM Training\Task_5\DAL_EF\obj\Debug\netcoreapp3.1\DAL_EF.AssemblyInfoInputs.cache
+C:\Misc\EPAM Training\Task_5\DAL_EF\obj\Debug\netcoreapp3.1\DAL_EF.AssemblyInfo.cs
+C:\Misc\EPAM Training\Task_5\DAL_EF\obj\Debug\netcoreapp3.1\DAL_EF.dll
+C:\Misc\EPAM Training\Task_5\DAL_EF\obj\Debug\netcoreapp3.1\DAL_EF.pdb
+C:\Misc\EPAM Training\Task_5\DAL_EF\bin\Debug\netcoreapp3.1\DAL_EF.runtimeconfig.json
+C:\Misc\EPAM Training\Task_5\DAL_EF\bin\Debug\netcoreapp3.1\DAL_EF.runtimeconfig.dev.json

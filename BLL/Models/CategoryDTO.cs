@@ -5,6 +5,6 @@ namespace BLL.Models
     {
         public int CategoryId {get; set;}
         public string Name {get; set;}
-        public IEnumerable<ProductDTO> Products {get; set;}
+        public ICollection<ProductDTO> Products {get; set;}
     }
 }

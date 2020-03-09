@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using DAL_EF.Interfaces;
 using DAL_EF.Entities;
 using DAL_EF.EF;
+using System.Linq;
 
 namespace DAL_EF.Repositories
 {
@@ -32,12 +33,28 @@ namespace DAL_EF.Repositories
 
         public Supplier GetById(int id)
         {
-            return db.Suppliers.Find(id);
+            return db.Suppliers
+                    .Where(sup => sup.SupplierId == id)
+                    .Include(sup => sup.ProductSuppliers)
+                    .FirstOrDefault();
         }
 
         public void Update(Supplier sup)
         {
-            db.Entry(sup).State = EntityState.Modified;
+            if (sup != null)
+            {
+                var supplier = GetById(sup.SupplierId);
+                if (supplier !=null)
+                {
+                    db.Entry(supplier).CurrentValues.SetValues(sup);
+                    db.Entry(supplier).State = EntityState.Modified;
+                }
+            
+                else
+                {
+                    db.Entry(sup).State = EntityState.Modified;
+                }
+            }
         }
         public void Save()
         {

@@ -1,0 +1,13 @@
+C:\Misc\EPAM Training\Task_5\BLL\bin\Debug\netstandard2.0\BLL.deps.json
+C:\Misc\EPAM Training\Task_5\BLL\bin\Debug\netstandard2.0\BLL.dll
+C:\Misc\EPAM Training\Task_5\BLL\bin\Debug\netstandard2.0\BLL.pdb
+C:\Misc\EPAM Training\Task_5\BLL\bin\Debug\netstandard2.0\DAL_ADONET.dll
+C:\Misc\EPAM Training\Task_5\BLL\bin\Debug\netstandard2.0\DAL_EF.dll
+C:\Misc\EPAM Training\Task_5\BLL\bin\Debug\netstandard2.0\DAL_ADONET.pdb
+C:\Misc\EPAM Training\Task_5\BLL\bin\Debug\netstandard2.0\DAL_EF.pdb
+C:\Misc\EPAM Training\Task_5\BLL\obj\Debug\netstandard2.0\BLL.csprojAssemblyReference.cache
+C:\Misc\EPAM Training\Task_5\BLL\obj\Debug\netstandard2.0\BLL.AssemblyInfoInputs.cache
+C:\Misc\EPAM Training\Task_5\BLL\obj\Debug\netstandard2.0\BLL.AssemblyInfo.cs
+C:\Misc\EPAM Training\Task_5\BLL\obj\Debug\netstandard2.0\BLL.csproj.CopyComplete
+C:\Misc\EPAM Training\Task_5\BLL\obj\Debug\netstandard2.0\BLL.dll
+C:\Misc\EPAM Training\Task_5\BLL\obj\Debug\netstandard2.0\BLL.pdb

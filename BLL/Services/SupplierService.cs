@@ -43,8 +43,10 @@ namespace BLL.Services
 
         public IEnumerable<SupplierDTO> GetCategorySuppliers(CategoryDTO cat)
         {
-            IEnumerable<ProductDTO> prod = BLLMapper.Map<SupplierDTO>
-                (_uow.Categories.GetById(cat.CategoryId)).Products;
+
+            
+            IEnumerable<ProductDTO> prod = (BLLMapper.Map<CategoryDTO>
+                (_uow.Categories.GetById(cat.CategoryId))).Products;
             var sups = _uow.Suppliers.GetAll()
                         .Select(s=> BLLMapper.Map<SupplierDTO>(s));
             
@@ -54,6 +56,7 @@ namespace BLL.Services
                 res.Concat(sups.Where(s => s.Products.Any(
                     product => product.ProductId == p.ProductId)));
             }
+
 
             return res;
         }
