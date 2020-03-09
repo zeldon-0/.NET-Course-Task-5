@@ -7,6 +7,9 @@ using BLL.Interfaces;
 using BLL.Models;
 using System.Collections.Generic;
 using System.Linq;
+using DAL_ADONET.Context;
+using DAL_ADONET.Models;
+using DAL_ADONET.Gateways;
 namespace UI_Console
 {
     
@@ -38,8 +41,14 @@ namespace UI_Console
             var sup = new SupplierDTO () {Name="sm", Products= new List<ProductDTO> {prod, prod1}};
             supplier.Create(sup);*/
 
-            Console.WriteLine(product.GetWithMaxPrice().ProductId);
-            Console.WriteLine(product.GetWithMinPrice().ProductId);
+            //Console.WriteLine(product.GetWithMaxPrice().ProductId);
+            //Console.WriteLine(product.GetWithMinPrice().ProductId);
+
+            ProductGateway prod = new ProductGateway (new SqlContext());
+            CategoryGateway categ = new CategoryGateway (new SqlContext());
+            categ.Create(new ADOCategory(){Name = "Category"});
+
+            prod.Create(new ADOProduct() {Name = "oof", Price=10, CategoryId =1});
 
         }
     }

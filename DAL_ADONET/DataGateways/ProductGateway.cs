@@ -17,10 +17,11 @@ namespace DAL_ADONET.Gateways
             if (prod != null)
             {
                 using (SqlCommand com = new SqlCommand(
-                    "INSERT INTO Products (Name, CategoryID) VALUES (@PName, @CatId)",
+                    "INSERT INTO Products (Name, Price, CategoryID) VALUES (@PName, @PPrice, @CatId)",
                     db.Connection))
                 {
                     com.Parameters.AddWithValue("PName", prod.Name);
+                    com.Parameters.AddWithValue("PPrice", prod.Price);
                     com.Parameters.AddWithValue("CatId", prod.CategoryId);
                     com.ExecuteNonQuery();
                 }

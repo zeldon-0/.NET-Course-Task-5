@@ -105,3 +105,6 @@ C:\Misc\EPAM Training\Task_5\UI_Console\bin\Debug\netcoreapp3.1\DAL_EF.pdb
 C:\Misc\EPAM Training\Task_5\UI_Console\obj\Debug\netcoreapp3.1\UI_Console.csproj.CopyComplete
 C:\Misc\EPAM Training\Task_5\UI_Console\obj\Debug\netcoreapp3.1\UI_Console.dll
 C:\Misc\EPAM Training\Task_5\UI_Console\obj\Debug\netcoreapp3.1\UI_Console.pdb
+C:\Misc\EPAM Training\Task_5\UI_Console\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Misc\EPAM Training\Task_5\UI_Console\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Misc\EPAM Training\Task_5\UI_Console\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll

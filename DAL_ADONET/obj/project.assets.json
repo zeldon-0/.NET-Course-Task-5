@@ -844,7 +844,7 @@
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "NETStandard.Library >= 2.0.3",
-      "system.data.sqlclient"
+      "system.data.sqlclient >= 4.8.1"
     ]
   },
   "packageFolders": {
@@ -896,7 +896,7 @@
           },
           "system.data.sqlclient": {
             "target": "Package",
-            "version": "(, )"
+            "version": "[4.8.1, )"
           }
         },
         "imports": [

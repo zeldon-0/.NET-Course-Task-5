@@ -8,7 +8,7 @@ namespace DAL_ADONET.Context
 
         public SqlContext()
         {
-            Connection = new SqlConnection("Server=localhost; Database=Task5_; Trusted_Connection=True;");
+            Connection = new SqlConnection("Server=localhost; Database=Task5_1; Trusted_Connection=True;");
             Connection.Open();
         }
 
